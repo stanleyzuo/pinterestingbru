@@ -1,1 +1,13 @@
-index.html.erb
+<div class="page">
+
+<h1>All Boards</h1>
+<% @boards.each do |board| %>
+<div>
+	<strong><%=link_to board.name, board_path(board) %></strong>
+	<br/>
+	<P><%= board.description %></p>
+	<hr/> 
+	<br/>
+</div>
+</div>
+<% end %>
