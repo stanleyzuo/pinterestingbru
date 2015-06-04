@@ -1,6 +1,7 @@
 <%= simple_form_for @board do |f| %>
   <%= f.input :name, label: 'Name' %>
   <%= f.input :description %>
+  <%= f.input :img_url, label:'Board Cover Image URL' %>
   <%= f.input :privacy, label: 'Private board' %>
   <%= f.button :submit %>
 <% end %>

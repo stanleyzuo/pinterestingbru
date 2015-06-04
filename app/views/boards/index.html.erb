@@ -5,6 +5,7 @@
 <div>
 	<strong><%=link_to board.name, board_path(board) %></strong>
 	<br/>
+	<%= link_to image_tag(board.img_url), board_path(board)%>
 	<P><%= board.description %></p>
 	<hr/> 
 	<br/>

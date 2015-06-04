@@ -1,0 +1,16 @@
+<div class="page">
+<h1><%= @board.name %></h1>
+
+<p><b> Description: </b><%= @board.description %></p>
+
+</br>
+
+<%= link_to 'Edit', edit_board_path(@board) %> |
+
+<%= link_to 'Delete', board_path(@board),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+
+
+<p><%= link_to 'All Boards', boards_path %></p>
+</div>

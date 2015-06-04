@@ -26,6 +26,7 @@ def show
 
 def edit
   @board = Board.find(params[:id])
+  
 end
 
 def update
@@ -47,6 +48,6 @@ def destroy
 
 private 
 def board_params 
-	params.require(:board).permit(:name, :description, :privacy)
+	params.require(:board).permit(:name, :description, :img_url, :privacy)
 end  
 end
